@@ -22,5 +22,14 @@ var pizza4 = pizzaOven("thin", "white", ["mozzarella"], ["chicken", "bacon", "sp
 console.log(pizza4);
 
 
+function randomPizza(crust, sauce, cheese, toppings){
+    var pizza = {};
+    pizza.crustType = crust[Math.floor(Math.random() * crust.length)];
+    pizza.sauceType = sauce[Math.floor(Math.random() * sauce.length)];
+    pizza.cheese = cheese[Math.floor(Math.random() * cheese.length)];
+    pizza.toppings = toppings[Math.floor(Math.random() * toppings.length)];
+    return pizza;
+}
 
-
+var rPizza = randomPizza(["Hand Tossed","Thick","Flat","Braided","Deep Dish","Thin"],["Traditional","White","BBQ","Spicy","No sauce"],["Mozzarella","Colby Jack","Mexican","Cheddar","Swiss","Pepper Jack"],["Onions","Tomatoes","Olives","Pineapple","Bacon","Sausage","Pepperoni","Ham"]);
+console.log(rPizza);
