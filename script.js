@@ -9,7 +9,7 @@ function pizzaOven(crust, sauce, cheese, toppings){
     return pizza;
 }
 
-var pizza1 = pizzaOven();
+var pizza1 = pizzaOven("deep dish", "traditional", ["mozzarella"], ["pepperoni", "sausage"]);
 console.log(pizza1);
 
 
